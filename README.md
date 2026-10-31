@@ -4,7 +4,7 @@ Version 1.0.0
 
 A customizable 3D-printed guide for hand-stamping a round metal tag with letter punches. Letters stay on an even pitch along each row, rows on an even pitch down the tag.
 
-Also on [Cults3D](https://cults3d.com/en/3d-model/home/customizable-stamp-jig-for-round-metal-tags).
+On [Cults3D](https://cults3d.com/en/3d-model/home/customizable-stamp-jig-for-round-metal-tags) and [GitHub](https://github.com/fox-hamachi/pet_tag).
 
 ## Hardware
 
