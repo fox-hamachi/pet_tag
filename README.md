@@ -4,7 +4,7 @@ Version 1.0.0
 
 A customizable 3D-printed guide for hand-stamping a round metal tag with letter punches. Letters stay on an even pitch along each row, rows on an even pitch down the tag.
 
-On [Cults3D](https://cults3d.com/en/3d-model/home/customizable-stamp-jig-for-round-metal-tags) and [GitHub](https://github.com/fox-hamachi/pet_tag).
+On [Cults3D](https://cults3d.com/en/3d-model/home/customizable-stamp-jig-for-round-metal-tags) and [GitHub](https://github.com/fox-hamachi/stamp-jig).
 
 ## Hardware
 
@@ -61,11 +61,11 @@ python3 stamp_jig.py [out_dir] [config.yaml] [name=value ...]
 
 ## Changelog
 
-See [Releases](https://github.com/fox-hamachi/pet_tag/releases).
+See [Releases](https://github.com/fox-hamachi/stamp-jig/releases).
 
 ## Credit
 
-Remix of [Guide for 8mm letter/number stamps](https://www.printables.com/model/761518) by JinPrints. Remixed by [foxhamachi](https://github.com/fox-hamachi/pet_tag). AI-assisted design.
+Remix of [Guide for 8mm letter/number stamps](https://www.printables.com/model/761518) by JinPrints. Remixed by [foxhamachi](https://github.com/fox-hamachi/stamp-jig). AI-assisted design.
 
 ## License
 
