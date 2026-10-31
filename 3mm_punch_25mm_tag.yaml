@@ -1,0 +1,82 @@
+# Stamp jig configuration: 3mm (1/8") letter stamps with 5.95mm square shanks (OWDEN 36-piece set)
+# on a 25mm x 0.85mm aluminum tag with a 3mm hole (Framendino tag blanks). All sizes in mm.
+# usage: python3 stamp_jig.py [out_dir] [config.yaml] [name=value ...]
+
+# Tag
+tag_diameter: 25
+tag_thickness: 0.85
+tag_hole_diameter: 3.0
+tag_hole_from_top: 3.5          # tag top edge to the hole center
+
+# Stamps
+punch_width: 5.95               # square shank, across the flats
+punch_clearance: 0.15           # per side, nominal punch fit: sizes the rail slot and the parts around it
+bottom_guide_clearance: 0.125   # per side, carriage hole at the bottom: sets where the letter lands
+top_guide_clearance: 0.175      # per side, carriage hole at the top: keeps the punch upright
+hole_relief: 0.3                # extra per side in the middle of the carriage hole, between the guides
+
+# Stamped Text layout
+letter_pitch: 2.4               # pitch: letter center to letter center along a row
+row_pitch: 4.2                  # line spacing: row center to row center
+first_row_from_top: 8.8         # tag top edge to the center of row 1
+letter_height: 3.0              # stamped character size
+letter_width: 2.0               # widest stamped character
+edge_margin: 1.0                # keep letters this far inside the tag edge
+hole_letters: true              # a letter each side of the tag hole: adds a sled notch at the hole
+                                # and narrows the pin tab to clear the letters
+
+# Fit
+tag_pocket_clearance: 0.15      # per side, around the tag in the sled pocket
+pin_clearance: 0.1              # per side, pin in the tag hole
+sled_clearance: 0.1             # per side, sled between the feet
+tab_clearance: 0.4              # gap between the tag top and the sled's pin tab; more makes the pin taller
+sled_headroom: 0.8              # gap between the sled top and the rail; 0.5 of it allows for the
+                                # rough rail underside left by the bridge supports
+detent_clearance: 0.15          # extra depth in each sled notch
+bump_clearance: 0.1             # per side, carriage nub in a rail dimple
+
+# Sizes
+sled_thickness: 2.2
+sled_handle_length: 27.5        # sled beyond the bottom of the tag pocket
+rail_thickness: 6
+carriage_height: 20
+carriage_wall: 4                # carriage material either side of the punch hole
+guide_length: 5                 # close-fitting part of the punch hole at each end of the carriage
+foot_width: 8
+foot_chamfer: 1.0               # 45-degree chamfer on the vertical corners of the feet
+detent_depth: 1.5               # how far each V tooth reaches in from its foot
+bump_height: 1.5                # carriage nubs (half-ellipsoids); the rail dimples are deeper
+dimple_land: 0.3                # ridge left between neighboring rail dimples
+label_height: 3.5               # ODD / EVEN lettering on the carriage front and back faces
+label_depth: 1.0
+tick_depth: 1.0                 # center ticks on the rail and carriage
+label_stroke: 0.6               # engraved line width
+
+# Fixed sizes: rarely need changing
+fn: 48                          # segments for round shapes; the tag pocket and engraving pen set their own
+letter_width_ratio: 0.6666666666666666  # 2/3: stamp font proportions, as in ../layout/cat_tag.py: letter width
+letter_pitch_ratio: 0.8         # and letter pitch, both as fractions of the letter height
+pin_tip_chamfer: 0.4            # 45-degree chamfer on the tip of the sled pin
+tab_margin: 0.5                 # pin tab material beyond the pin, toward the tag center
+tab_side_margin: 2.6            # pin tab material either side of the pin
+hole_letter_gap: 0.5            # least gap between the tag hole and a letter beside it
+hole_tab_gap: 0.4               # pin tab edge to a letter beside the hole, room for the punch's tapered tip
+tab_overlap: 0.85               # how far the pin tab reaches past the tag pocket onto the sled frame
+sled_notch_wall: 2.2            # sled material outside the bottom of each notch
+sled_top_margin: 3.5            # sled beyond the tag top edge
+rail_side_wall: 6               # rail material either side of the punch slot
+bump_row_offset: 3              # bump and dimple rows: distance out from the punch hole edge
+foot_overhang: 16               # feet run this far past the rail at each end, to guide the sled
+slot_end_clearance: 0.2         # slot length beyond the outermost punch positions, at each end
+lead_in: 0.8                    # depth and width of the 45-degree lead-in at the top of the punch hole
+slot_lead_in: 0.5               # depth and width of the 45-degree chamfer on the rail slot's long top edges
+label_top_margin: 1.2           # carriage top to the top of the ODD / EVEN label
+tick_label_gap: 0.8             # gap between the carriage label and the tick below it
+tick_width: 0.4                 # center ticks on the rail and carriage
+rail_tick_inset: 1.5            # rail ticks start this far above the tunnel
+grip_groove_count: 5            # grip grooves across the top of the sled handle
+grip_groove_width: 0.8          # along the handle
+grip_groove_pitch: 2            # groove to groove
+grip_groove_length: 16          # across the handle
+grip_groove_depth: 0.5          # into the sled top
+grip_groove_start: 3            # handle end to the first groove
